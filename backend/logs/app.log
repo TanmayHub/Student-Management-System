@@ -1,0 +1,781 @@
+2026-07-25 17:13:23,603 | INFO | Student Management System API started.
+2026-07-25 17:16:15,749 | INFO | Student Management System API started.
+2026-07-25 17:20:42,210 | INFO | Student Management System API started.
+2026-07-25 17:20:43,832 | INFO | Student Management System API started.
+2026-07-25 17:31:32,833 | INFO | Student Management System API started.
+2026-07-25 17:32:40,042 | INFO | Student created successfully. ID=14
+2026-07-25 17:34:07,600 | WARNING | Validation failed: POST /students/
+2026-07-25 17:37:14,311 | INFO | Student deleted successfully. ID=14
+2026-07-25 17:50:43,381 | INFO | Student Management System API started.
+2026-07-25 17:52:15,653 | INFO | Student Management System API started.
+2026-07-25 17:52:22,376 | INFO | Student Management System API started.
+2026-07-25 17:53:21,693 | INFO | Student Management System API started.
+2026-07-25 17:53:29,068 | INFO | Student Management System API started.
+2026-07-25 17:54:00,757 | INFO | Student Management System API started.
+2026-07-25 17:54:43,874 | INFO | Student Management System API started.
+2026-07-25 17:55:33,440 | INFO | Student Management System API started.
+2026-07-26 00:04:21,336 | INFO | Student Management System API started.
+2026-07-26 00:04:23,373 | INFO | Student Management System API started.
+2026-07-26 00:05:56,193 | INFO | Student Management System API started.
+2026-07-26 00:08:11,207 | WARNING | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-07-26 00:08:11,292 | ERROR | Unexpected exception at POST /auth/register
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\routers\auth.py", line 23, in register
+    return user_crud.create_user(db, user)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\crud\user_crud.py", line 24, in create_user
+    hashed_password = hash_password(user.password)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\security.py", line 9, in hash_password
+    return pwd_context.hash(password)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-07-26 00:13:41,180 | INFO | Student Management System API started.
+2026-07-26 00:17:08,893 | INFO | User registered successfully | ID=1 | Email=Tanmay@gmail.com
+2026-07-26 00:28:03,455 | INFO | Student Management System API started.
+2026-07-26 01:52:58,170 | INFO | Student Management System API started.
+2026-07-26 01:54:33,940 | INFO | User authenticated successfully: Tanmay@gmail.com
+2026-07-26 01:55:18,391 | INFO | Student Management System API started.
+2026-07-27 03:46:28,970 | INFO | Student Management System API started.
+2026-07-27 03:46:31,308 | INFO | Student Management System API started.
+2026-07-27 03:46:45,227 | INFO | Student Management System API started.
+2026-07-27 03:50:05,582 | WARNING | 401 - Not authenticated | POST /students/
+2026-07-27 03:52:33,674 | INFO | User authenticated successfully: Tanmay@gmail.com
+2026-07-27 03:55:29,148 | WARNING | Validation failed | POST /auth/login | Errors: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Tanmay&password=Tanmay%40123'}]
+2026-07-27 03:55:29,233 | ERROR | Unexpected exception at POST /auth/login
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 740, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Tanmay&password=Tanmay%40123'}
+
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\routers\auth.py", line 25, in login
+    POST /auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\exceptions.py", line 31, in validation_exception_handler
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+    ...<4 lines>...
+        }
+    )
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2026-07-27 03:55:34,056 | WARNING | Validation failed | POST /auth/login | Errors: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Tanmay&password=Tanmay%40123'}]
+2026-07-27 03:55:34,057 | ERROR | Unexpected exception at POST /auth/login
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 740, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Tanmay&password=Tanmay%40123'}
+
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\routers\auth.py", line 25, in login
+    POST /auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\exceptions.py", line 31, in validation_exception_handler
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+    ...<4 lines>...
+        }
+    )
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2026-07-27 03:55:34,233 | WARNING | Validation failed | POST /auth/login | Errors: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Tanmay&password=Tanmay%40123'}]
+2026-07-27 03:55:34,234 | ERROR | Unexpected exception at POST /auth/login
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 740, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Tanmay&password=Tanmay%40123'}
+
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\routers\auth.py", line 25, in login
+    POST /auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\exceptions.py", line 31, in validation_exception_handler
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+    ...<4 lines>...
+        }
+    )
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2026-07-27 03:55:34,442 | WARNING | Validation failed | POST /auth/login | Errors: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Tanmay&password=Tanmay%40123'}]
+2026-07-27 03:55:34,443 | ERROR | Unexpected exception at POST /auth/login
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 740, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Tanmay&password=Tanmay%40123'}
+
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\routers\auth.py", line 25, in login
+    POST /auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\exceptions.py", line 31, in validation_exception_handler
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+    ...<4 lines>...
+        }
+    )
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2026-07-27 04:01:32,581 | INFO | User registered successfully | ID=2 | Email=Rahul@gmail.com
+2026-07-27 04:02:15,910 | WARNING | 401 - Not authenticated | POST /students/
+2026-07-27 04:05:14,562 | INFO | User authenticated successfully: Rahul@gmail.com
+2026-07-27 04:05:56,576 | WARNING | Validation failed | POST /auth/login | Errors: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Rahul&password=Rahul%40123'}]
+2026-07-27 04:05:56,579 | ERROR | Unexpected exception at POST /auth/login
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 740, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Rahul&password=Rahul%40123'}
+
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\routers\auth.py", line 25, in login
+    POST /auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\exceptions.py", line 31, in validation_exception_handler
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+    ...<4 lines>...
+        }
+    )
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2026-07-27 04:06:12,908 | INFO | Student Management System API started.
+2026-07-27 04:07:05,843 | INFO | User authenticated successfully: Rahul@gmail.com
+2026-07-27 04:12:03,351 | WARNING | Validation failed | POST /auth/login | Errors: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Rahul&password=Rahul%40123'}]
+2026-07-27 04:12:03,363 | ERROR | Unexpected exception at POST /auth/login
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 740, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Rahul&password=Rahul%40123'}
+
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\routers\auth.py", line 25, in login
+    POST /auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\exceptions.py", line 31, in validation_exception_handler
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+    ...<4 lines>...
+        }
+    )
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2026-07-27 04:12:17,951 | INFO | User authenticated successfully: Rahul@gmail.com
+2026-07-27 04:13:07,308 | WARNING | Validation failed | POST /auth/login | Errors: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Rahul&password=Rahul%40123'}]
+2026-07-27 04:13:07,316 | ERROR | Unexpected exception at POST /auth/login
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 740, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=Rahul&password=Rahul%40123'}
+
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\routers\auth.py", line 25, in login
+    POST /auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\exceptions.py", line 31, in validation_exception_handler
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+    ...<4 lines>...
+        }
+    )
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\tanma\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2026-07-27 04:18:39,347 | WARNING | 401 - Not authenticated | POST /students/
+2026-07-27 04:24:41,026 | INFO | Student Management System API started.
+2026-07-27 04:24:42,469 | INFO | Student Management System API started.
+2026-07-27 04:25:36,340 | INFO | Student Management System API started.
+2026-07-27 04:25:38,214 | INFO | Student Management System API started.
+2026-07-27 04:25:39,931 | INFO | Student Management System API started.
+2026-07-27 04:25:49,977 | INFO | Student Management System API started.
+2026-07-27 04:25:52,648 | INFO | Student Management System API started.
+2026-07-27 04:26:15,144 | INFO | Student Management System API started.
+2026-07-27 04:27:18,613 | ERROR | Unexpected exception at POST /auth/login
+Traceback (most recent call last):
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "C:\Users\tanma\OneDrive\Desktop\Projects\StudentManagementSystem\backend\routers\auth.py", line 37, in login
+    form_data.email,
+    ^^^^^^^^^^^^^^^
+AttributeError: 'OAuth2PasswordRequestForm' object has no attribute 'email'
+2026-07-27 04:32:49,580 | INFO | Student Management System API started.
+2026-07-27 04:33:13,395 | INFO | Student Management System API started.
+2026-07-27 04:34:02,291 | WARNING | Login failed. User not found: Rahul
+2026-07-27 04:34:02,297 | WARNING | 401 - Invalid email or password. | POST /auth/login
+2026-07-27 04:34:23,491 | INFO | User authenticated successfully: Rahul@gmail.com
+2026-07-27 04:34:57,266 | INFO | User authenticated successfully: Rahul@gmail.com
+2026-07-27 04:35:28,515 | WARNING | 404 - Student not found | GET /students/2
+2026-07-27 04:36:02,036 | WARNING | 404 - Student not found | GET /students/1
+2026-07-27 04:36:30,784 | WARNING | 404 - Student not found | PUT /students/2
+2026-07-27 04:42:51,734 | INFO | Student created successfully | ID=15 | Roll No=string
